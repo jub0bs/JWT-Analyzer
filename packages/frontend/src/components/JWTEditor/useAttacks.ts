@@ -238,10 +238,9 @@ export function useAttacks() {
         case "empty-key": {
           const h = b64hFn(header);
           const p = b64pFn(payload);
-          const sig = btoa(`empty_key_${h}.${p}`)
-            .replace(/\+/g, "-")
-            .replace(/\//g, "_")
-            .replace(/=+$/, "");
+          // signHMAC chokes on an empty key, but any non-empty key consisting
+          // only of null bytes does the trick.
+          const sig = await signHMAC(`${h}.${p}`, "\x00", "HS256");
           tab.token = `${h}.${p}.${sig}`;
           toast("Token signed with empty key");
           break;
