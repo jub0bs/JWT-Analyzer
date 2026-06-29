@@ -89,7 +89,7 @@ const QUICK_ATTACKS: {
     description: "Use public key as HMAC secret",
   },
   {
-    label: "Empty Key Signature",
+    label: "Empty-Key Signature",
     value: "empty-key",
     icon: "fa-eraser",
     description: "Sign with empty string key",

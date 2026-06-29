@@ -512,7 +512,7 @@
               </tr>
               <tr class="border-b border-surface-700/50">
                 <td class="py-2 pr-4 text-surface-200 font-medium">
-                  Empty Key Signature
+                  Empty-Key Signature
                 </td>
                 <td class="py-2">
                   Signs the token using an empty string as the key.

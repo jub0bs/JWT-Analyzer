@@ -23,7 +23,7 @@ type AttackType =
 export const ATTACK_OPTIONS: { label: string; value: AttackType }[] = [
   { label: "'none' Algorithm", value: "none" },
   { label: "HMAC Key Confusion", value: "hmac-confusion" },
-  { label: "Empty Key Signature", value: "empty-key" },
+  { label: "Empty-Key Signature", value: "empty-key" },
   { label: "Psychic Signature (CVE-2022-21449)", value: "psychic" },
   { label: "Embedded JWK", value: "embedded-jwk" },
   { label: "Weak HMAC Secret", value: "weak-hmac" },

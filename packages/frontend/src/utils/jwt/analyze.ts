@@ -385,7 +385,7 @@ export function analyzeJWTSecurity(
       risk(
         "algorithm",
         "high",
-        "Potential vulnerability to empty key attacks (CVE-2018-1000531)",
+        "Potential vulnerability to empty-key attacks (CVE-2018-1000531)",
         "Tokens signed with empty keys may be accepted by vulnerable JWT libraries",
       ),
     );
